@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Result</title>
+</head>
+<body>
+    <h1>🎶 Your Playlist</h1>
+    {% if playlist_link %}
+        <p>✅ Your playlist has been created! Click the link below to open it:</p>
+        <a href="{{ playlist_link }}" target="_blank">Open Playlist</a>
+    {% else %}
+        <p>❌ {{ error }}</p>
+    {% endif %}
+    <br><br>
+    <a href="/">Go Back</a>
+</body>
+</html>
